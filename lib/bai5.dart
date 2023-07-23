@@ -49,17 +49,7 @@ class _PrimeNumberScreenState extends State<PrimeNumberScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        leading: Icon(Icons.menu),
-        title: Text('Kiểm tra số nguyên tố'),
-        actions: [
-          PopupMenuButton(itemBuilder: (BuildContext context) {
-            return const [
-              PopupMenuItem(child: Text("Setting 1"), value: "Setting 1"),
-              PopupMenuItem(child: Text("Setting 2"), value: "Setting 1"),
-              PopupMenuItem(child: Text("Setting 3"), value: "Setting 1")
-            ];
-          })
-        ],
+        title: Text('Kiểm tra số nguyên tố')
       ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
